@@ -1,0 +1,9 @@
+2025-06-21 13:14:26,261-Test_Emp-INFO-Starting OrangeHRM login test
+2025-06-21 13:14:28,036-Test_Emp-INFO-Navigating to login page
+2025-06-21 13:14:31,201-Test_Emp-INFO-Entering username and password
+2025-06-21 13:14:34,806-Test_Emp-INFO-Login successful! Current URL:https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-06-21 13:14:34,984-Test_Emp-INFO-Screenshot saved to screenshots/login_result.png
+2025-06-21 13:14:34,984-Test_Emp-INFO-Navigating to login page
+2025-06-21 13:14:34,984-Test_Emp-INFO-Entering first name and last name
+2025-06-21 13:14:57,256-Test_Emp-INFO-addition failed. Current URL:https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-06-21 13:14:57,353-Test_Emp-INFO-Screenshot saved to screenshots/login_result.png

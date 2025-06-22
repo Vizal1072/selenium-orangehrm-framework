@@ -1,0 +1,14 @@
+2025-06-19 20:30:42,336-TestLogin-INFO-Starting OrangeHRM login test
+2025-06-19 20:30:44,334-TestLogin-INFO-Navigating to login page
+2025-06-19 20:30:47,554-TestLogin-INFO-Entering username and password
+2025-06-19 20:30:47,554-TestLogin-ERROR-An error occurred
+2025-06-19 20:30:47,554-TestLogin-ERROR-presence_of_element_located() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\tests\test_login.py", line 18, in test_login
+    login.user_pass("Admin","admin123")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\pages\login_page.py", line 17, in user_pass
+    user=wait.until(EC.presence_of_element_located(*self.user_input))
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+TypeError: presence_of_element_located() takes 1 positional argument but 2 were given
+2025-06-19 20:30:49,747-TestLogin-INFO-driver closed,test completed

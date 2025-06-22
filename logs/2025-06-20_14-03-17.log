@@ -1,0 +1,70 @@
+2025-06-20 14:03:17,897-TestLogin-INFO-Starting OrangeHRM login test
+2025-06-20 14:03:27,800-TestLogin-INFO-Navigating to login page
+2025-06-20 14:03:35,043-TestLogin-INFO-Entering username and password
+2025-06-20 14:03:36,583-TestLogin-ERROR-An error occurred
+2025-06-20 14:03:36,583-TestLogin-ERROR-Message: invalid argument: 'using' must be a string
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+	GetHandleVerifier [0x0x693b03+62899]
+	GetHandleVerifier [0x0x693b44+62964]
+	(No symbol) [0x0x4c10f3]
+	(No symbol) [0x0x509349]
+	(No symbol) [0x0x509bab]
+	(No symbol) [0x0x5525c2]
+	(No symbol) [0x0x52e554]
+	(No symbol) [0x0x54fd81]
+	(No symbol) [0x0x52e306]
+	(No symbol) [0x0x4fd670]
+	(No symbol) [0x0x4fe4e4]
+	GetHandleVerifier [0x0x8f4793+2556483]
+	GetHandleVerifier [0x0x8efd02+2537394]
+	GetHandleVerifier [0x0x6ba2fa+220586]
+	GetHandleVerifier [0x0x6aaae8+157080]
+	GetHandleVerifier [0x0x6b141d+184013]
+	GetHandleVerifier [0x0x69ba68+95512]
+	GetHandleVerifier [0x0x69bc10+95936]
+	GetHandleVerifier [0x0x686b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+Traceback (most recent call last):
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\tests\test_login.py", line 18, in test_login
+    login.user_pass("Admin","admin123")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\pages\login_page.py", line 18, in user_pass
+    passw=self.driver.find_element(self.pass_input)
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 898, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+	GetHandleVerifier [0x0x693b03+62899]
+	GetHandleVerifier [0x0x693b44+62964]
+	(No symbol) [0x0x4c10f3]
+	(No symbol) [0x0x509349]
+	(No symbol) [0x0x509bab]
+	(No symbol) [0x0x5525c2]
+	(No symbol) [0x0x52e554]
+	(No symbol) [0x0x54fd81]
+	(No symbol) [0x0x52e306]
+	(No symbol) [0x0x4fd670]
+	(No symbol) [0x0x4fe4e4]
+	GetHandleVerifier [0x0x8f4793+2556483]
+	GetHandleVerifier [0x0x8efd02+2537394]
+	GetHandleVerifier [0x0x6ba2fa+220586]
+	GetHandleVerifier [0x0x6aaae8+157080]
+	GetHandleVerifier [0x0x6b141d+184013]
+	GetHandleVerifier [0x0x69ba68+95512]
+	GetHandleVerifier [0x0x69bc10+95936]
+	GetHandleVerifier [0x0x686b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+
+2025-06-20 14:03:38,730-TestLogin-INFO-driver closed,test completed

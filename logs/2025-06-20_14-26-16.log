@@ -1,0 +1,68 @@
+2025-06-20 14:26:16,647-Test_Emp-INFO-Starting OrangeHRM login test
+2025-06-20 14:26:19,290-Test_Emp-INFO-Navigating to login page
+2025-06-20 14:26:26,121-Test_Emp-INFO-Entering username and password
+2025-06-20 14:26:33,084-Test_Emp-INFO-Login successful! Current URL:https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-06-20 14:26:33,216-Test_Emp-INFO-Screenshot saved to screenshots/login_result.png
+2025-06-20 14:26:33,216-Test_Emp-INFO-Navigating to login page
+2025-06-20 14:26:33,216-Test_Emp-INFO-Entering first , last name and id
+2025-06-20 14:26:43,394-Test_Emp-ERROR-An error occurred
+2025-06-20 14:26:43,397-Test_Emp-ERROR-Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x693b03+62899]
+	GetHandleVerifier [0x0x693b44+62964]
+	(No symbol) [0x0x4c10f3]
+	(No symbol) [0x0x50980e]
+	(No symbol) [0x0x509bab]
+	(No symbol) [0x0x5525c2]
+	(No symbol) [0x0x52e554]
+	(No symbol) [0x0x54fd81]
+	(No symbol) [0x0x52e306]
+	(No symbol) [0x0x4fd670]
+	(No symbol) [0x0x4fe4e4]
+	GetHandleVerifier [0x0x8f4793+2556483]
+	GetHandleVerifier [0x0x8efd02+2537394]
+	GetHandleVerifier [0x0x6ba2fa+220586]
+	GetHandleVerifier [0x0x6aaae8+157080]
+	GetHandleVerifier [0x0x6b141d+184013]
+	GetHandleVerifier [0x0x69ba68+95512]
+	GetHandleVerifier [0x0x69bc10+95936]
+	GetHandleVerifier [0x0x686b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+Traceback (most recent call last):
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\tests\test_add_emp.py", line 33, in test_add_emp
+    emp.add_employee(driver,"john","doe","0891")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\pages\employee_page.py", line 17, in add_employee
+    link1 = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located(self.pim)
+    
+    )
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x693b03+62899]
+	GetHandleVerifier [0x0x693b44+62964]
+	(No symbol) [0x0x4c10f3]
+	(No symbol) [0x0x50980e]
+	(No symbol) [0x0x509bab]
+	(No symbol) [0x0x5525c2]
+	(No symbol) [0x0x52e554]
+	(No symbol) [0x0x54fd81]
+	(No symbol) [0x0x52e306]
+	(No symbol) [0x0x4fd670]
+	(No symbol) [0x0x4fe4e4]
+	GetHandleVerifier [0x0x8f4793+2556483]
+	GetHandleVerifier [0x0x8efd02+2537394]
+	GetHandleVerifier [0x0x6ba2fa+220586]
+	GetHandleVerifier [0x0x6aaae8+157080]
+	GetHandleVerifier [0x0x6b141d+184013]
+	GetHandleVerifier [0x0x69ba68+95512]
+	GetHandleVerifier [0x0x69bc10+95936]
+	GetHandleVerifier [0x0x686b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+

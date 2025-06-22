@@ -1,0 +1,142 @@
+2025-06-19 20:24:57,745-Test_Emp-INFO-Starting OrangeHRM login test
+2025-06-19 20:24:59,704-Test_Emp-INFO-Navigating to login page
+2025-06-19 20:25:05,389-Test_Emp-INFO-Entering username and password
+2025-06-19 20:25:06,928-Test_Emp-ERROR-An error occurred
+2025-06-19 20:25:06,928-Test_Emp-ERROR-Message: invalid argument: 'using' must be a string
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+	GetHandleVerifier [0x0x1213b03+62899]
+	GetHandleVerifier [0x0x1213b44+62964]
+	(No symbol) [0x0x10410f3]
+	(No symbol) [0x0x1089349]
+	(No symbol) [0x0x1089bab]
+	(No symbol) [0x0x10d25c2]
+	(No symbol) [0x0x10ae554]
+	(No symbol) [0x0x10cfd81]
+	(No symbol) [0x0x10ae306]
+	(No symbol) [0x0x107d670]
+	(No symbol) [0x0x107e4e4]
+	GetHandleVerifier [0x0x1474793+2556483]
+	GetHandleVerifier [0x0x146fd02+2537394]
+	GetHandleVerifier [0x0x123a2fa+220586]
+	GetHandleVerifier [0x0x122aae8+157080]
+	GetHandleVerifier [0x0x123141d+184013]
+	GetHandleVerifier [0x0x121ba68+95512]
+	GetHandleVerifier [0x0x121bc10+95936]
+	GetHandleVerifier [0x0x1206b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+Traceback (most recent call last):
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\tests\test_add_emp.py", line 19, in test_add_emp
+    login.user_pass("Admin", "admin123")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\pages\login_page.py", line 18, in user_pass
+    passw=self.driver.find_element(self.pass_input)
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 898, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+	GetHandleVerifier [0x0x1213b03+62899]
+	GetHandleVerifier [0x0x1213b44+62964]
+	(No symbol) [0x0x10410f3]
+	(No symbol) [0x0x1089349]
+	(No symbol) [0x0x1089bab]
+	(No symbol) [0x0x10d25c2]
+	(No symbol) [0x0x10ae554]
+	(No symbol) [0x0x10cfd81]
+	(No symbol) [0x0x10ae306]
+	(No symbol) [0x0x107d670]
+	(No symbol) [0x0x107e4e4]
+	GetHandleVerifier [0x0x1474793+2556483]
+	GetHandleVerifier [0x0x146fd02+2537394]
+	GetHandleVerifier [0x0x123a2fa+220586]
+	GetHandleVerifier [0x0x122aae8+157080]
+	GetHandleVerifier [0x0x123141d+184013]
+	GetHandleVerifier [0x0x121ba68+95512]
+	GetHandleVerifier [0x0x121bc10+95936]
+	GetHandleVerifier [0x0x1206b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+
+2025-06-19 20:25:06,937-TestLogin-INFO-Starting OrangeHRM login test
+2025-06-19 20:25:09,013-TestLogin-INFO-Navigating to login page
+2025-06-19 20:25:16,432-TestLogin-INFO-Entering username and password
+2025-06-19 20:25:16,434-TestLogin-ERROR-An error occurred
+2025-06-19 20:25:16,434-TestLogin-ERROR-Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+	GetHandleVerifier [0x0x1213b03+62899]
+	GetHandleVerifier [0x0x1213b44+62964]
+	(No symbol) [0x0x10410f3]
+	(No symbol) [0x0x101ff59]
+	(No symbol) [0x0x10b4f7e]
+	(No symbol) [0x0x10cf6a9]
+	(No symbol) [0x0x10ae306]
+	(No symbol) [0x0x107d670]
+	(No symbol) [0x0x107e4e4]
+	GetHandleVerifier [0x0x1474793+2556483]
+	GetHandleVerifier [0x0x146fd02+2537394]
+	GetHandleVerifier [0x0x123a2fa+220586]
+	GetHandleVerifier [0x0x122aae8+157080]
+	GetHandleVerifier [0x0x123141d+184013]
+	GetHandleVerifier [0x0x121ba68+95512]
+	GetHandleVerifier [0x0x121bc10+95936]
+	GetHandleVerifier [0x0x1206b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+Traceback (most recent call last):
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\tests\test_login.py", line 18, in test_login
+    login.user_pass("Admin","admin123")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\pages\login_page.py", line 17, in user_pass
+    user=wait.until(EC.presence_of_element_located(self.user_input))
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+    value = method(self._driver)
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 110, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 898, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+	GetHandleVerifier [0x0x1213b03+62899]
+	GetHandleVerifier [0x0x1213b44+62964]
+	(No symbol) [0x0x10410f3]
+	(No symbol) [0x0x101ff59]
+	(No symbol) [0x0x10b4f7e]
+	(No symbol) [0x0x10cf6a9]
+	(No symbol) [0x0x10ae306]
+	(No symbol) [0x0x107d670]
+	(No symbol) [0x0x107e4e4]
+	GetHandleVerifier [0x0x1474793+2556483]
+	GetHandleVerifier [0x0x146fd02+2537394]
+	GetHandleVerifier [0x0x123a2fa+220586]
+	GetHandleVerifier [0x0x122aae8+157080]
+	GetHandleVerifier [0x0x123141d+184013]
+	GetHandleVerifier [0x0x121ba68+95512]
+	GetHandleVerifier [0x0x121bc10+95936]
+	GetHandleVerifier [0x0x1206b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+
+2025-06-19 20:25:18,568-TestLogin-INFO-driver closed,test completed

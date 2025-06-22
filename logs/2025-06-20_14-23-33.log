@@ -1,0 +1,6 @@
+2025-06-20 14:23:33,716-TestLogin-INFO-Starting OrangeHRM login test
+2025-06-20 14:23:38,306-TestLogin-INFO-Navigating to login page
+2025-06-20 14:23:44,405-TestLogin-INFO-Entering username and password
+2025-06-20 14:23:49,273-TestLogin-INFO-Login successful! Current URL:https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-06-20 14:23:49,398-TestLogin-INFO-Screenshot saved to screenshots/login_result.png
+2025-06-20 14:23:51,634-TestLogin-INFO-driver closed,test completed

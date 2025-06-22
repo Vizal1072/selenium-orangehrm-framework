@@ -1,0 +1,74 @@
+2025-06-20 19:24:32,557-Test_Emp-INFO-Starting OrangeHRM login test
+2025-06-20 19:24:34,768-Test_Emp-INFO-Navigating to login page
+2025-06-20 19:24:39,634-Test_Emp-INFO-Entering username and password
+2025-06-20 19:24:45,123-Test_Emp-INFO-Login successful! Current URL:https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-06-20 19:24:45,319-Test_Emp-INFO-Screenshot saved to screenshots/login_result.png
+2025-06-20 19:24:45,320-Test_Emp-INFO-Navigating to login page
+2025-06-20 19:24:45,320-Test_Emp-INFO-Entering first , last name and id
+2025-06-20 19:24:47,280-Test_Emp-ERROR-An error occurred
+2025-06-20 19:24:47,281-Test_Emp-ERROR-Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='firstName']"}
+  (Session info: chrome=137.0.7151.104); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x10f3b03+62899]
+	GetHandleVerifier [0x0x10f3b44+62964]
+	(No symbol) [0x0xf210f3]
+	(No symbol) [0x0xf6980e]
+	(No symbol) [0x0xf69bab]
+	(No symbol) [0x0xfb25c2]
+	(No symbol) [0x0xf8e554]
+	(No symbol) [0x0xfafd81]
+	(No symbol) [0x0xf8e306]
+	(No symbol) [0x0xf5d670]
+	(No symbol) [0x0xf5e4e4]
+	GetHandleVerifier [0x0x1354793+2556483]
+	GetHandleVerifier [0x0x134fd02+2537394]
+	GetHandleVerifier [0x0x111a2fa+220586]
+	GetHandleVerifier [0x0x110aae8+157080]
+	GetHandleVerifier [0x0x111141d+184013]
+	GetHandleVerifier [0x0x10fba68+95512]
+	GetHandleVerifier [0x0x10fbc10+95936]
+	GetHandleVerifier [0x0x10e6b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+Traceback (most recent call last):
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\tests\test_add_emp.py", line 33, in test_add_emp
+    emp.add_employee("john","doe","0891")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\pages\employee_page.py", line 25, in add_employee
+    self.driver.find_element(*self.name).send_keys(first)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 898, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='firstName']"}
+  (Session info: chrome=137.0.7151.104); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0x10f3b03+62899]
+	GetHandleVerifier [0x0x10f3b44+62964]
+	(No symbol) [0x0xf210f3]
+	(No symbol) [0x0xf6980e]
+	(No symbol) [0x0xf69bab]
+	(No symbol) [0x0xfb25c2]
+	(No symbol) [0x0xf8e554]
+	(No symbol) [0x0xfafd81]
+	(No symbol) [0x0xf8e306]
+	(No symbol) [0x0xf5d670]
+	(No symbol) [0x0xf5e4e4]
+	GetHandleVerifier [0x0x1354793+2556483]
+	GetHandleVerifier [0x0x134fd02+2537394]
+	GetHandleVerifier [0x0x111a2fa+220586]
+	GetHandleVerifier [0x0x110aae8+157080]
+	GetHandleVerifier [0x0x111141d+184013]
+	GetHandleVerifier [0x0x10fba68+95512]
+	GetHandleVerifier [0x0x10fbc10+95936]
+	GetHandleVerifier [0x0x10e6b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+

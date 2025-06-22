@@ -1,0 +1,14 @@
+2025-06-20 20:34:40,365-Test_Emp-INFO-Starting OrangeHRM login test
+2025-06-20 20:34:42,375-Test_Emp-INFO-Navigating to login page
+2025-06-20 20:34:50,204-Test_Emp-INFO-Entering username and password
+2025-06-20 20:34:57,095-Test_Emp-INFO-Login successful! Current URL:https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-06-20 20:34:57,237-Test_Emp-INFO-Screenshot saved to screenshots/login_result.png
+2025-06-20 20:34:57,238-Test_Emp-INFO-Navigating to login page
+2025-06-20 20:34:57,238-Test_Emp-INFO-Entering first , last name and id
+2025-06-20 20:35:04,967-Test_Emp-ERROR-An error occurred
+2025-06-20 20:35:04,968-Test_Emp-ERROR-unsupported operand type(s) for &: 'str' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\tests\test_add_emp.py", line 36, in test_add_emp
+    if "john" in current_url1 & "doe" in current_url1 :
+                 ~~~~~~~~~~~~~^~~~~~~
+TypeError: unsupported operand type(s) for &: 'str' and 'str'

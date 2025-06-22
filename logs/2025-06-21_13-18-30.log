@@ -1,0 +1,83 @@
+2025-06-21 13:18:30,652-Test_Emp-INFO-Starting OrangeHRM login test
+2025-06-21 13:18:32,538-Test_Emp-INFO-Navigating to login page
+2025-06-21 13:18:35,817-Test_Emp-INFO-Entering username and password
+2025-06-21 13:18:40,505-Test_Emp-INFO-Login successful! Current URL:https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-06-21 13:18:40,621-Test_Emp-INFO-Screenshot saved to screenshots/login_result.png
+2025-06-21 13:18:40,621-Test_Emp-INFO-Navigating to login page
+2025-06-21 13:18:40,621-Test_Emp-INFO-Entering first name and last name
+2025-06-21 13:18:43,158-Test_Emp-ERROR-An error occurred
+2025-06-21 13:18:43,159-Test_Emp-ERROR-Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=137.0.7151.104); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x3a3b03+62899]
+	GetHandleVerifier [0x0x3a3b44+62964]
+	(No symbol) [0x0x1d10f3]
+	(No symbol) [0x0x1d78e0]
+	(No symbol) [0x0x1d9c0a]
+	(No symbol) [0x0x1d9c87]
+	(No symbol) [0x0x2190a4]
+	(No symbol) [0x0x219bab]
+	(No symbol) [0x0x2625c2]
+	(No symbol) [0x0x23e554]
+	(No symbol) [0x0x25fd81]
+	(No symbol) [0x0x23e306]
+	(No symbol) [0x0x20d670]
+	(No symbol) [0x0x20e4e4]
+	GetHandleVerifier [0x0x604793+2556483]
+	GetHandleVerifier [0x0x5ffd02+2537394]
+	GetHandleVerifier [0x0x3ca2fa+220586]
+	GetHandleVerifier [0x0x3baae8+157080]
+	GetHandleVerifier [0x0x3c141d+184013]
+	GetHandleVerifier [0x0x3aba68+95512]
+	GetHandleVerifier [0x0x3abc10+95936]
+	GetHandleVerifier [0x0x396b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+Traceback (most recent call last):
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\tests\test_add_emp.py", line 33, in test_add_emp
+    emp.add_employee("john","doe")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\eugin\PycharmProjects\PythonProject\project_orange\pages\employee_page.py", line 31, in add_employee
+    link=wait.until(ec.element_to_be_clickable(self.save))
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+    value = method(self._driver)
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 633, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 898, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\eugin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=137.0.7151.104); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x3a3b03+62899]
+	GetHandleVerifier [0x0x3a3b44+62964]
+	(No symbol) [0x0x1d10f3]
+	(No symbol) [0x0x1d78e0]
+	(No symbol) [0x0x1d9c0a]
+	(No symbol) [0x0x1d9c87]
+	(No symbol) [0x0x2190a4]
+	(No symbol) [0x0x219bab]
+	(No symbol) [0x0x2625c2]
+	(No symbol) [0x0x23e554]
+	(No symbol) [0x0x25fd81]
+	(No symbol) [0x0x23e306]
+	(No symbol) [0x0x20d670]
+	(No symbol) [0x0x20e4e4]
+	GetHandleVerifier [0x0x604793+2556483]
+	GetHandleVerifier [0x0x5ffd02+2537394]
+	GetHandleVerifier [0x0x3ca2fa+220586]
+	GetHandleVerifier [0x0x3baae8+157080]
+	GetHandleVerifier [0x0x3c141d+184013]
+	GetHandleVerifier [0x0x3aba68+95512]
+	GetHandleVerifier [0x0x3abc10+95936]
+	GetHandleVerifier [0x0x396b5a+9738]
+	BaseThreadInitThunk [0x0x761d5d49+25]
+	RtlInitializeExceptionChain [0x0x7780d03b+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7780cfc1+561]
+
