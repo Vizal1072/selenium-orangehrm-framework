@@ -1,5 +1,5 @@
 #OrangeHRM Selenium Automation
-This project showcases logon,employee form filling and menu navigation using Selenium and Python
+This project showcases login,employee form filling and menu navigation using Selenium and Python
 ## Features
 - Login Test
 - Add Employee Form
